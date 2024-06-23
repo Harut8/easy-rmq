@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "easy-rmq"
+version = "0.1.0"
+description = ""
+authors = ["harut <harut.avetisyan@imeasystems.com>"]
+readme = "README.md"
+packages = [{include = "pub_sub"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aio-pika = "^9.4.1"
+pydantic = "^2.7.4"
+dependency-injector = "^4.41.0"
+fastapi = "^0.111.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
